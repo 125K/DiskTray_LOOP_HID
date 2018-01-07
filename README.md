@@ -1,7 +1,7 @@
 # DiskTray LOOP (For BadUSBs)
 This scripts sets a vbs file into the startup folder that opens the disk tray over and over (Every 5 seconds).
 
-# Code
+## Code
 <pre><code>GUI d
 DELAY 300
 GUI r
@@ -27,3 +27,6 @@ STRING loop
 DELAY 200
 CTRL z
 </code></pre>
+
+## More information
+<a href="https://social.technet.microsoft.com/wiki/contents/articles/5169.vbscript-sendkeys-method.aspx">VBScript - SendKeys Method </a>
